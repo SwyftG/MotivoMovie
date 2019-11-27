@@ -1,0 +1,151 @@
+.postscore {
+	position: absolute;
+	font-size: 1.4rem;
+	background-color: #ffcc00;
+	border-radius: 3px;
+	width: auto;
+	height: auto;
+	padding: 0px 8px;
+	right: 15px;
+	top: 15px;
+	margin-left: 0px;
+}
+
+.postscoretext {
+	color: #060c5e;
+}
+
+.scprenum1 {
+	background-color: #ff3838;
+}
+
+.scprenum2 {
+	background-color: #ff007e;
+}
+
+.scprenum3 {
+	background-color: #ff5400;
+}
+
+.titlerow {
+	align-items: center;
+	margin-left: 0px;
+}
+
+.titlerowright {
+	font-weight: bold;
+	right: 0px;
+	color: #3c3c3c;
+	margin-right: 10px;
+	flex: 1;
+	text-align: right;
+	margin-bottom: 5px;
+	font-size: .8rem;
+}
+
+.titlerowleft {
+	height: 100%;
+	color: #1a1a1a;
+	font-size: 1rem;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.poster {
+	display: block;
+	position: relative;
+}
+
+.postimage {
+	height: 100%;
+	width: 100%;
+}
+
+.cardpostimage {
+	height: 100%;
+	width: 100%;
+}
+
+.carddiv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hovereffect {
+	width: 100%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	cursor: default;
+}
+
+.hovereffect .overlay {
+	position: absolute;
+	overflow: hidden;
+	left: 0;
+	top: auto;
+	bottom: 0;
+	height: 40%;
+	background: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+
+.hovereffect p,
+.hovereffect h2 {
+	color: #fff;
+	text-align: left;
+	position: relative;
+	font-weight: bold;
+	font-size: .6rem;
+	padding: 10px;
+	height: 100%;
+	margin: 0px;
+	display: inline-block;
+}
+
+.hovereffect h2,
+.hovereffect p,
+.hovereffect p.icon-links a {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,200%,0);
+	transform: translate3d(0,200%,0);
+	visibility: visible;
+}
+
+.hovereffect:hover .overlay,
+.hovereffect:hover h2,
+.hovereffect:hover p {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.hovereffect:hover h2,
+.hovereffect:hover p {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+.margintop10 {
+	margin-top: 10px;
+}
+
+.marginbottom10 {
+	margin-bottom: 10px;
+}
+
+.marginbottom1rem{
+	margin-bottom: .8rem;
+	margin-top: .2rem;
+}
+
+
