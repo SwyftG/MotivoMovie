@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/fftest/static/css/main.86f639ed.chunk.css",
+    "main.js": "/fftest/static/js/main.062a7255.chunk.js",
+    "main.js.map": "/fftest/static/js/main.062a7255.chunk.js.map",
+    "runtime-main.js": "/fftest/static/js/runtime-main.7d259dbf.js",
+    "runtime-main.js.map": "/fftest/static/js/runtime-main.7d259dbf.js.map",
+    "static/css/2.09ae8418.chunk.css": "/fftest/static/css/2.09ae8418.chunk.css",
+    "static/js/2.dadae1b9.chunk.js": "/fftest/static/js/2.dadae1b9.chunk.js",
+    "static/js/2.dadae1b9.chunk.js.map": "/fftest/static/js/2.dadae1b9.chunk.js.map",
+    "index.html": "/fftest/index.html",
+    "precache-manifest.449ab930d37f97b459df875efadf8a8f.js": "/fftest/precache-manifest.449ab930d37f97b459df875efadf8a8f.js",
+    "service-worker.js": "/fftest/service-worker.js",
+    "static/css/2.09ae8418.chunk.css.map": "/fftest/static/css/2.09ae8418.chunk.css.map",
+    "static/css/main.86f639ed.chunk.css.map": "/fftest/static/css/main.86f639ed.chunk.css.map",
+    "static/media/logo.svg": "/fftest/static/media/logo.25bf045c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7d259dbf.js",
+    "static/css/2.09ae8418.chunk.css",
+    "static/js/2.dadae1b9.chunk.js",
+    "static/css/main.86f639ed.chunk.css",
+    "static/js/main.062a7255.chunk.js"
+  ]
+}
