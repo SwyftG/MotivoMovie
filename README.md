@@ -4,7 +4,7 @@ Using *React, Html5 and CSS3* to build the frontend and using *TMDb's* public AP
 
 ### Check it out
 
-You could check it out by the follow link: https://swyftg.github.io/motivomovie/
+You could check it out by the follow link: https://swyftg.github.io/MotivoMovie/
 
 ![homepage](https://raw.githubusercontent.com/SwyftG/motivomovie2/master/img/homepage.png)
 
@@ -26,7 +26,7 @@ You could check it out by the follow link: https://swyftg.github.io/motivomovie/
 
 #### Single-page Application
 
-The MotivoMovie is a single-page application. Because all the interactions are happened in a single URL, here is `https://swyftg.github.io/motivomovie/`.
+The MotivoMovie is a single-page application. Because all the interactions are happened in a single URL, here is `https://swyftg.github.io/MotivoMovie/`.
 
 Page shows the different content by passing different parameters to `<MoviePlayground>` in `App.js`.
 
@@ -102,7 +102,7 @@ Using `react-circular-progressbar` to implement circle progress bar of movie sco
 
 #### Github Page
 
-The whole project has been deployed on Github Page. You could visit it by the following URL: https://swyftg.github.io/motivomovie/
+The whole project has been deployed on Github Page. You could visit it by the following URL: https://swyftg.github.io/MotivoMovie/
 
 ### TODO
 
