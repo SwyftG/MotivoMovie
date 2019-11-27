@@ -1,68 +1,122 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+MotivoMovie is  a *small, responsive single-page application* which provides visitors the ability to browse and interact with an online catalog of movies.
 
-## Available Scripts
+Using *React, Html5 and CSS3* to build the frontend and using *TMDb's* public API to be the backend.
 
-In the project directory, you can run:
+### Check it out
 
-### `npm start`
+You could check it out by the follow link: https://swyftg.github.io/motivomovie/
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![homepage](https://raw.githubusercontent.com/SwyftG/motivomovie/master/img/homepage.png)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `npm test`
+### Key Feature
+- It's a single-page application.
+- Showing movie list by four categories.
+- Support search movies.
+- Support filter movies.
+- Showing movie details.
+- Could add movie to your local watch list.
+- Could modify watch list by simple operations.
+- Implement infinite scrolling, grab the data from API page by page.
+- Automatically set movie detail page's background color by its poster.
+- Simple animations between page changing and hover.
+- Deployed the web on GitHub Page. Open access to anybody to visit.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Feature Details
 
-### `npm run build`
+#### Single-page Application
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The MotivoMovie is a single-page application. Because all the interactions are happened in a single URL, here is `https://swyftg.github.io/motivomovie/`.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Page shows the different content by passing different parameters to `<MoviePlayground>` in `App.js`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### TMDb's Movie List
 
-### `npm run eject`
+Here I use TMDb's public API to get Movie list.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+| Action | API URL |
+| ------ | ------ |
+| Movie Detail | `https://api.themoviedb.org/3/movie/<movie_id>?api_key=<api_key>&append_to_response=credits` |
+| similar Movie | `https://api.themoviedb.org/3/movie/<movie_id>/similar?api_key=<api_key>&language=en-US` |
+| Recommendation Movie | `https://api.themoviedb.org/3/movie/<movie_id>/recommendations?api_key=<api_key>&language=en-US` |
+| Background | `https://api.themoviedb.org/3/movie/<movie_id>/images?api_key=<api_key>&language=en-US&include_image_language=en` |
+| Movie List By Category | `https://api.themoviedb.org/3/movie/<category>?api_key=<api_key>&language=en-US&page=1` |
+| Search Movie | `https://api.themoviedb.org/3/search/movie?api_key=<api_key>&query=<search_keyword>` |
+| Movie List By PageNum | `https://api.themoviedb.org/3/movie/<category>?api_key=<api_key>&language=en-US&page=<page_num>` |
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Above APIs can implement:
+- Search movie by type in movie's name.
+- Grab movie list data from backend by different category.
+- Grab movie in same category by different page number.
+- Grab movie details by movie's id.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### CSS framework
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Using Bootstrap 4.3.1 to implement UI.
 
-## Learn More
+#### Local Watch List
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+When you are in the movie detail page, there is a button named `Add To WatchList`. Click this button will store the current movie's info into local storage in JSON format.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Next time when you visit `Watch List` page, the page will read localStorage to get all the stored item, and show them on the page.
 
-### Code Splitting
+Here in this page, when you click the post again, it will remove the movie from watch list.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+![watch_list](https://raw.githubusercontent.com/SwyftG/motivomovie/master/img/watchlist.png)
 
-### Analyzing the Bundle Size
+#### Filter Movie And See More
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+In the top of movie category page, there is a `<input>` component to support filter movie by type names.
 
-### Making a Progressive Web App
+This is just using react to manage the movie data which should be shown on the page.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+![filter_01](https://raw.githubusercontent.com/SwyftG/motivomovie/master/img/filter01.png)
 
-### Advanced Configuration
+![filter_02](https://raw.githubusercontent.com/SwyftG/motivomovie/master/img/filter02.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+See more part is same as below.
 
-### Deployment
+![see_more_01](https://raw.githubusercontent.com/SwyftG/motivomovie/master/img/seemore01.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+![see_more_02](https://raw.githubusercontent.com/SwyftG/motivomovie/master/img/seemore2.png)
 
-### `npm run build` fails to minify
+#### Infinite Scrolling
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Using `react-infinite-scroll-component` to implement infinite scrolling page. When page scroll to the bottom, it will automatically fetch data from backend by page number adding one.
+
+#### Colorful UI
+
+Using `react-color-extractor` to make movie detail page's background color more colorful. The color is from movie poster. Different movie will present different movie detail page color.
+
+![color_01](https://raw.githubusercontent.com/SwyftG/motivomovie/master/img/color01.png)
+
+![color_02](https://raw.githubusercontent.com/SwyftG/motivomovie/master/img/color02.png)
+
+#### Slide Animation
+
+Using `react-transition-group` and CSS3 to implement movie detail page slide-in and slide-out animations. 
+
+#### Progress bar
+
+Using `react-circular-progressbar` to implement circle progress bar of movie score.
+
+#### Github Page
+
+The whole project has been deployed on Github Page. You could visit it by the following URL: https://swyftg.github.io/motivomovie/
+
+### TODO
+
+This is my first react project. It is so interesting. There are lot of place I need to focus on, such as:
+- UI
+- Animations
+- Performance
+- Code refactor
+
+I have made some improvement of above aspects according to my Mobile development experience. But it is not enough. I will pay more attention and do more exercise on these. 
+
+If you have any questions, please contact me via email.
+
+Thank you very much.
+
+
+
