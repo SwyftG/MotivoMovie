@@ -1,7 +1,7 @@
 {
   "name": "mytest",
   "version": "0.1.0",
-  "homepage": "https://swyftg.github.io/fftest",
+  "homepage": "https://swyftg.github.io/MotivoMovie/",
   "private": true,
   "dependencies": {
     "jquery": "^3.3.1",
