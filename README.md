@@ -6,7 +6,7 @@ Using *React, Html5 and CSS3* to build the frontend and using *TMDb's* public AP
 
 You could check it out by the follow link: https://swyftg.github.io/motivomovie/
 
-![homepage](https://raw.githubusercontent.com/SwyftG/motivomovie/master/img/homepage.png)
+![homepage](https://raw.githubusercontent.com/SwyftG/motivomovie2/master/img/homepage.png)
 
 
 ### Key Feature
@@ -62,7 +62,7 @@ Next time when you visit `Watch List` page, the page will read localStorage to g
 
 Here in this page, when you click the post again, it will remove the movie from watch list.
 
-![watch_list](https://raw.githubusercontent.com/SwyftG/motivomovie/master/img/watchlist.png)
+![watch_list](https://raw.githubusercontent.com/SwyftG/motivomovie2/master/img/watchlist.png)
 
 #### Filter Movie And See More
 
@@ -70,15 +70,15 @@ In the top of movie category page, there is a `<input>` component to support fil
 
 This is just using react to manage the movie data which should be shown on the page.
 
-![filter_01](https://raw.githubusercontent.com/SwyftG/motivomovie/master/img/filter01.png)
+![filter_01](https://raw.githubusercontent.com/SwyftG/motivomovie2/master/img/filter01.png)
 
-![filter_02](https://raw.githubusercontent.com/SwyftG/motivomovie/master/img/filter02.png)
+![filter_02](https://raw.githubusercontent.com/SwyftG/motivomovie2/master/img/filter02.png)
 
 See more part is same as below.
 
-![see_more_01](https://raw.githubusercontent.com/SwyftG/motivomovie/master/img/seemore01.png)
+![see_more_01](https://raw.githubusercontent.com/SwyftG/motivomovie2/master/img/seemore01.png)
 
-![see_more_02](https://raw.githubusercontent.com/SwyftG/motivomovie/master/img/seemore2.png)
+![see_more_02](https://raw.githubusercontent.com/SwyftG/motivomovie2/master/img/seemore2.png)
 
 #### Infinite Scrolling
 
@@ -88,9 +88,9 @@ Using `react-infinite-scroll-component` to implement infinite scrolling page. Wh
 
 Using `react-color-extractor` to make movie detail page's background color more colorful. The color is from movie poster. Different movie will present different movie detail page color.
 
-![color_01](https://raw.githubusercontent.com/SwyftG/motivomovie/master/img/color01.png)
+![color_01](https://raw.githubusercontent.com/SwyftG/motivomovie2/master/img/color01.png)
 
-![color_02](https://raw.githubusercontent.com/SwyftG/motivomovie/master/img/color02.png)
+![color_02](https://raw.githubusercontent.com/SwyftG/motivomovie2/master/img/color02.png)
 
 #### Slide Animation
 
