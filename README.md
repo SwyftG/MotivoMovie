@@ -76,9 +76,9 @@ This is just using react to manage the movie data which should be shown on the p
 
 See more part is same as below.
 
-![see_more_01](https://raw.githubusercontent.com/SwyftG/motivomovie2/master/img/seemore01.png)
+![see_more_01](https://raw.githubusercontent.com/SwyftG/motivomovie2/master/img/seemore.png)
 
-![see_more_02](https://raw.githubusercontent.com/SwyftG/motivomovie2/master/img/seemore2.png)
+![see_more_02](https://raw.githubusercontent.com/SwyftG/motivomovie2/master/img/seemore02.png)
 
 #### Infinite Scrolling
 
