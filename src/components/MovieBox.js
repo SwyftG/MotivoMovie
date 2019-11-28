@@ -139,7 +139,7 @@ class MovieBox extends Component {
         const showHideClassName = this.state.showDetail ? "modal display-block" : "modal display-none";
         const processSlice = this.props.movie.vote_average * 10 / 5
         return (
-            <div key={this.props.movie.id} className={this.props.movie.isShow === true ? "col-xs-6 col-sm-3 visibility-visible marginbottom1rem" : "display-none"}>
+            <div key={this.props.movie.id} className={this.props.movie.isShow === true ? "col-xs-6 col-sm-3 visibility-visible marginbottom1rem moviebox" : "display-none"}>
                 <div className="card md-3 shadow-sm" id={this.props.movie.id} onClick={this.props.isWatchListMode === false ? this.showMovieDetail.bind(this) : this.handleRemoveWatchList.bind(this)} >
                     <div className="poster hovereffect">
                         <img

@@ -148,4 +148,68 @@
 	margin-top: .2rem;
 }
 
+@media screen and (max-width: 767px) {
+	.moviebox{
+		width: 50%;
+	}
+
+	.titlerow {
+		align-items: center;
+		margin-left: 0px;
+	}
+	
+	.titlerowright {
+		font-weight: bold;
+    right: 0px;
+    color: #3c3c3c;
+    margin-right: 5px;
+    text-align: right;
+    margin-bottom: 3px;
+    font-size: .4rem;
+	}
+	
+	.titlerowleft {
+		height: 100%;
+    color: #1a1a1a;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+	}
+
+	.hovereffect p,
+	.hovereffect h2 {
+	color: #fff;
+	text-align: left;
+	position: relative;
+	font-weight: bold;
+	font-size: .4rem;
+	padding: 0px;
+	height: 100%;
+	margin: 0px;
+	text-align: left;
+	display: inline-block;
+}
+
+	.postscoretext{
+		
+	}
+
+	.postscore {
+		position: absolute;
+		font-size: 1.0rem;
+		
+		border-radius: 3px;
+		width: auto;
+		height: auto;
+		padding: 0px 8px;
+		right: 10px;
+		top: 10px;
+		margin-left: 0px;
+	}
+}
+
+
+
 
