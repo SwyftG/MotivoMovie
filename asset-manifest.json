@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/MotivoMovie/static/css/main.86f639ed.chunk.css",
-    "main.js": "/MotivoMovie/static/js/main.9e9bf224.chunk.js",
-    "main.js.map": "/MotivoMovie/static/js/main.9e9bf224.chunk.js.map",
+    "main.css": "/MotivoMovie/static/css/main.1c876de3.chunk.css",
+    "main.js": "/MotivoMovie/static/js/main.9ec377f2.chunk.js",
+    "main.js.map": "/MotivoMovie/static/js/main.9ec377f2.chunk.js.map",
     "runtime-main.js": "/MotivoMovie/static/js/runtime-main.90a3cd77.js",
     "runtime-main.js.map": "/MotivoMovie/static/js/runtime-main.90a3cd77.js.map",
     "static/css/2.09ae8418.chunk.css": "/MotivoMovie/static/css/2.09ae8418.chunk.css",
-    "static/js/2.dadae1b9.chunk.js": "/MotivoMovie/static/js/2.dadae1b9.chunk.js",
-    "static/js/2.dadae1b9.chunk.js.map": "/MotivoMovie/static/js/2.dadae1b9.chunk.js.map",
+    "static/js/2.30e4de73.chunk.js": "/MotivoMovie/static/js/2.30e4de73.chunk.js",
+    "static/js/2.30e4de73.chunk.js.map": "/MotivoMovie/static/js/2.30e4de73.chunk.js.map",
     "index.html": "/MotivoMovie/index.html",
-    "precache-manifest.9116d749c4c28a59cde0436d6fa1beab.js": "/MotivoMovie/precache-manifest.9116d749c4c28a59cde0436d6fa1beab.js",
+    "precache-manifest.ba432e48aa1bb9eccc146bcf93f8725f.js": "/MotivoMovie/precache-manifest.ba432e48aa1bb9eccc146bcf93f8725f.js",
     "service-worker.js": "/MotivoMovie/service-worker.js",
     "static/css/2.09ae8418.chunk.css.map": "/MotivoMovie/static/css/2.09ae8418.chunk.css.map",
-    "static/css/main.86f639ed.chunk.css.map": "/MotivoMovie/static/css/main.86f639ed.chunk.css.map",
+    "static/css/main.1c876de3.chunk.css.map": "/MotivoMovie/static/css/main.1c876de3.chunk.css.map",
     "static/media/logo.svg": "/MotivoMovie/static/media/logo.25bf045c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.90a3cd77.js",
     "static/css/2.09ae8418.chunk.css",
-    "static/js/2.dadae1b9.chunk.js",
-    "static/css/main.86f639ed.chunk.css",
-    "static/js/main.9e9bf224.chunk.js"
+    "static/js/2.30e4de73.chunk.js",
+    "static/css/main.1c876de3.chunk.css",
+    "static/js/main.9ec377f2.chunk.js"
   ]
 }
