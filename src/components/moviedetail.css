@@ -311,7 +311,7 @@
 	}
 
 	.detailyear{
-		font-size: 1rem;
+		font-size: .5rem;
 	}
 
 	.detailtitle {
@@ -330,7 +330,7 @@
 	.detailaddwatchlist {
 		margin-left: 30px;
 		color: #ba6e2c;
-		font-size: .1rem;
+		font-size: .5rem;
 		margin-top: 0px;
 		border-style: solid;
 		margin-left: 0px;
@@ -386,13 +386,13 @@
 		color: #000;
 		margin: 0px 0px 0px 0px;
 		font-weight: normal;
-		font-size: .1rem;
+		font-size: .5rem;
 	}
 
 	.actertextcharacter{
 	    color: #f00;
     margin: 0px 0px 0px 0px;
-    font-size: 1px;
+    font-size: .5rem;
 	}
 
 	.addmore-text{
@@ -426,7 +426,7 @@
 	}
 
 	.mobilecrewname{
-		font-size: 1px;
+		font-size: .5rem;
     width: 50%;
     padding: 0px;
     margin: 0px;
@@ -435,7 +435,7 @@
 	}
 	
 	.mobilecrewjob{
-		font-size: 1px;
+		font-size: .5rem;
 		width: 50%;
 		text-align: right;
 		line-height: 15px;
