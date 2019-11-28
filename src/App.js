@@ -2,15 +2,20 @@ import React, { Component } from "react";
 import logo from './logo.svg';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import './App.css';
+import './components/moviedetail.css'
 import MoviePlayground from "./components/MoviePlayground.js";
 import NaviBar from "./components/NaviBar.js"
+import MovieSidePage from "./components/MovieSidePage"
 
 class App extends Component {
 
   constructor(props) {
     super(props)
     this.state = {
+      isClose: false,
       routerUrl: "/",
+      movieDetail: undefined,
+      showMovieDetail:false,
     };
 
     this.gotoHomePage = this.gotoHomePage.bind(this)
@@ -18,7 +23,8 @@ class App extends Component {
     this.gotoWatchListPage = this.gotoWatchListPage.bind(this)
     this.gotoMovieCategoryPage = this.gotoMovieCategoryPage.bind(this)
     this.gotoSearchPage = this.gotoSearchPage.bind(this)
-    
+    this.hideMovieSidePage = this.hideMovieSidePage.bind(this)
+    this.startHideMovieSidePage = this.startHideMovieSidePage.bind(this)
   }
 
   gotoHomePage() {
@@ -59,15 +65,46 @@ class App extends Component {
 
   // avoid mutiple refresh
   shouldComponentUpdate(nextProps, nextState) {
-    if (nextState.routerUrl !== this.state.routerUrl) {
+    if (nextState.routerUrl !== this.state.routerUrl || nextState.movieDetail !== this.state.movieDetail || nextState.showMovieDetail !== this.state.showMovieDetail || nextState.isClose !== this.state.isClose) {
       return true
     } else {
       return false
     }
   }
 
-  render() {
+  showMovieSidePage(movie) {
+    console.log("App id:", movie.id)
+    this.setState({
+      movieDetail: {...movie},
+      showMovieDetail:true,
+    })      
+  }
 
+  startHideMovieSidePage() {
+    console.log("startHideMovieSidePage, ",this.state.isClose)
+    this.setState({
+      isClose: true,
+    }) 
+  }
+
+  hideMovieSidePage() {
+    this.setState({
+      isClose: false,
+      showMovieDetail: !this.state.showMovieDetail,
+      movieDetail: undefined,
+    }) 
+  }
+
+  render() {
+    const isMovieNull = this.state.movieDetail === undefined;
+    let movieDetail = null;
+    if (isMovieNull) {
+      movieDetail = <div></div>
+    } else {
+      movieDetail = <div className={this.state.showMovieDetail ? "modal display-block" : "modal display-none"} onClick={this.startHideMovieSidePage}>
+        <MovieSidePage showDetail={this.state.showMovieDetail} movie={this.state.movieDetail} isClose={this.state.isClose} hidePage={this.hideMovieSidePage} />
+        </div>
+    }
     return (
         <div>
           <div className="topnavi">
@@ -80,7 +117,8 @@ class App extends Component {
             />
           </div>
           <div className="main">
-            <MoviePlayground routerUrl={this.state.routerUrl} />
+            <MoviePlayground routerUrl={this.state.routerUrl} showDetail={this.showMovieSidePage.bind(this)}/>
+            {movieDetail}
           </div>
         </div>
     );

@@ -31,6 +31,9 @@ class MoviePlayground extends Component {
     }
 
     componentWillReceiveProps = (nextProps) => {
+        if (nextProps.routerUrl === this.state.routerUrl) {
+            return
+        }
         var message = "componentWillReceiveProps:" + nextProps.routerUrl
         this.updateComponent(nextProps.routerUrl, message)
         this.setState({
@@ -267,6 +270,10 @@ class MoviePlayground extends Component {
         })
     }
 
+    openMovieDetail(movie) {
+        this.props.showDetail(movie)
+    }
+
     render() {
         return (
             <div>
@@ -285,7 +292,7 @@ class MoviePlayground extends Component {
                         hasMore={this.state.hasMore}
                         loader={<h4>Loading...</h4>}>
                         {this.state.movies.map((movie, index) => (
-                            <MovieBox key={movie.id} movie={movie} movieindex={this.state.pageType === "category" ? index : 4} isWatchListMode={this.state.isWatchListMode} showWatchlist={this.showWatchlist.bind(this)} />
+                            <MovieBox key={movie.id} movie={movie} movieindex={this.state.pageType === "category" ? index : 4} isWatchListMode={this.state.isWatchListMode} showWatchlist={this.showWatchlist.bind(this)} openDetail={this.openMovieDetail.bind(this)}/>
                         ))}
                     </InfiniteScroll>
                 </div>
