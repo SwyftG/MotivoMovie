@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/MotivoMovie/static/css/main.40281619.chunk.css",
-    "main.js": "/MotivoMovie/static/js/main.439bc390.chunk.js",
-    "main.js.map": "/MotivoMovie/static/js/main.439bc390.chunk.js.map",
+    "main.css": "/MotivoMovie/static/css/main.f05cd6f8.chunk.css",
+    "main.js": "/MotivoMovie/static/js/main.32185440.chunk.js",
+    "main.js.map": "/MotivoMovie/static/js/main.32185440.chunk.js.map",
     "runtime-main.js": "/MotivoMovie/static/js/runtime-main.90a3cd77.js",
     "runtime-main.js.map": "/MotivoMovie/static/js/runtime-main.90a3cd77.js.map",
     "static/css/2.09ae8418.chunk.css": "/MotivoMovie/static/css/2.09ae8418.chunk.css",
     "static/js/2.30e4de73.chunk.js": "/MotivoMovie/static/js/2.30e4de73.chunk.js",
     "static/js/2.30e4de73.chunk.js.map": "/MotivoMovie/static/js/2.30e4de73.chunk.js.map",
     "index.html": "/MotivoMovie/index.html",
-    "precache-manifest.8e1347ac4e3f79d2b5912478bcd25b28.js": "/MotivoMovie/precache-manifest.8e1347ac4e3f79d2b5912478bcd25b28.js",
+    "precache-manifest.32a2c91e35361c43ec2f8b3bcd9b6ecb.js": "/MotivoMovie/precache-manifest.32a2c91e35361c43ec2f8b3bcd9b6ecb.js",
     "service-worker.js": "/MotivoMovie/service-worker.js",
     "static/css/2.09ae8418.chunk.css.map": "/MotivoMovie/static/css/2.09ae8418.chunk.css.map",
-    "static/css/main.40281619.chunk.css.map": "/MotivoMovie/static/css/main.40281619.chunk.css.map",
+    "static/css/main.f05cd6f8.chunk.css.map": "/MotivoMovie/static/css/main.f05cd6f8.chunk.css.map",
     "static/media/logo.svg": "/MotivoMovie/static/media/logo.25bf045c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.90a3cd77.js",
     "static/css/2.09ae8418.chunk.css",
     "static/js/2.30e4de73.chunk.js",
-    "static/css/main.40281619.chunk.css",
-    "static/js/main.439bc390.chunk.js"
+    "static/css/main.f05cd6f8.chunk.css",
+    "static/js/main.32185440.chunk.js"
   ]
 }
