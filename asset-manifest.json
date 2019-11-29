@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/MotivoMovie/static/css/main.f05cd6f8.chunk.css",
+    "main.css": "/MotivoMovie/static/css/main.2243776d.chunk.css",
     "main.js": "/MotivoMovie/static/js/main.32185440.chunk.js",
     "main.js.map": "/MotivoMovie/static/js/main.32185440.chunk.js.map",
     "runtime-main.js": "/MotivoMovie/static/js/runtime-main.90a3cd77.js",
@@ -9,17 +9,17 @@
     "static/js/2.30e4de73.chunk.js": "/MotivoMovie/static/js/2.30e4de73.chunk.js",
     "static/js/2.30e4de73.chunk.js.map": "/MotivoMovie/static/js/2.30e4de73.chunk.js.map",
     "index.html": "/MotivoMovie/index.html",
-    "precache-manifest.32a2c91e35361c43ec2f8b3bcd9b6ecb.js": "/MotivoMovie/precache-manifest.32a2c91e35361c43ec2f8b3bcd9b6ecb.js",
+    "precache-manifest.6a83aa6fd3baac8202314ba5d5fed3a3.js": "/MotivoMovie/precache-manifest.6a83aa6fd3baac8202314ba5d5fed3a3.js",
     "service-worker.js": "/MotivoMovie/service-worker.js",
     "static/css/2.09ae8418.chunk.css.map": "/MotivoMovie/static/css/2.09ae8418.chunk.css.map",
-    "static/css/main.f05cd6f8.chunk.css.map": "/MotivoMovie/static/css/main.f05cd6f8.chunk.css.map",
+    "static/css/main.2243776d.chunk.css.map": "/MotivoMovie/static/css/main.2243776d.chunk.css.map",
     "static/media/logo.svg": "/MotivoMovie/static/media/logo.25bf045c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.90a3cd77.js",
     "static/css/2.09ae8418.chunk.css",
     "static/js/2.30e4de73.chunk.js",
-    "static/css/main.f05cd6f8.chunk.css",
+    "static/css/main.2243776d.chunk.css",
     "static/js/main.32185440.chunk.js"
   ]
 }
