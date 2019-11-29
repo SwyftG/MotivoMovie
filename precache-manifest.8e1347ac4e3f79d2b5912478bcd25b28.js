@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d378a3f79575c9f43c8552d0a212a6f8",
+    "revision": "d09630d47844762ffb030e40247ef79a",
     "url": "/MotivoMovie/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MotivoMovie/static/css/2.09ae8418.chunk.css"
   },
   {
-    "revision": "dc730591e78fc82c5a9b",
-    "url": "/MotivoMovie/static/css/main.36e23dd9.chunk.css"
+    "revision": "d5978cc0b1830abaa7de",
+    "url": "/MotivoMovie/static/css/main.40281619.chunk.css"
   },
   {
     "revision": "afcab26440754d111f16",
     "url": "/MotivoMovie/static/js/2.30e4de73.chunk.js"
   },
   {
-    "revision": "dc730591e78fc82c5a9b",
-    "url": "/MotivoMovie/static/js/main.5de33099.chunk.js"
+    "revision": "d5978cc0b1830abaa7de",
+    "url": "/MotivoMovie/static/js/main.439bc390.chunk.js"
   },
   {
     "revision": "9cb6ab2ae3038f461f12",
