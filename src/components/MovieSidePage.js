@@ -306,19 +306,15 @@ export default class MovieSidePage extends Component {
                 var crew = detail.credits.crew;
                 var crewList = crew
 
-                if (crew.length > 8) {
+                if (crew.length > 10) {
                     this.setState({
-                        crew: crewList.slice(0, 8)
+                        crew: crewList.slice(0, 10)
                     })
                 } else {
                     this.setState({
                         crew: crewList
                     })
                 }
-                console.log("crew0", crewList)
-
-
-                console.log("crew2", this.state.crew)
 
             },
             error: (xhr, status, err) => {
@@ -361,9 +357,11 @@ export default class MovieSidePage extends Component {
         event.stopPropagation();
         event.nativeEvent.stopImmediatePropagation();
     }
+    startHidePage() {
+        this.props.startHideDetailPage()
+    }
 
     render() {
-        console.log("Crew-->: ", this.state.crew)
         return (
             <CSSTransition
                 in={this.state.slideIn}
@@ -373,6 +371,10 @@ export default class MovieSidePage extends Component {
                 classNames='slide-animation'>
                 <div className="modal-main" id="modal-main" onClick={this.handleNormalClick.bind(this)} style={{ backgroundColor: this.state.bgColor }} >
                     <div class="container" id="movie-detail-page">
+                        <div className="marginbottom20 d-lg-none backtolistdiv row" onClick={this.startHidePage.bind(this)}>
+                            <i class="fa fa-chevron-circle-left backtolisticon" aria-hidden="true"></i>
+                            <p class="backtolisttext">Back To List</p>
+                        </div>
                         <div class="row paddingtop_3">
                             <div class="col-xs-4 col-md-4 detailimage">
                                 <a href={this.props.movie.poster.replace("w500", "w1280")} target="_blank">

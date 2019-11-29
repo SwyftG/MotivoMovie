@@ -355,6 +355,7 @@
 		color: #dbdbdb;
 		font-weight: bold;
 		margin-bottom: 5px;
+		margin-top: 5px;
 	}
 
 	.detailblocktext{
@@ -449,4 +450,37 @@
 		margin-top: 5px;
 	}
 	
+	.modal .modal-main {
+		position: relative;
+		background-color: #3caf8e;
+		width: 100%;
+		margin-left: 0px;
+		height: 100%;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		z-index: 1;
+	}
+
+	.backtolisttext{
+		margin-bottom: .3rem;
+		margin-left: 5px;
+	}
+
+	.backtolisticon{
+		margin-left: 13px;
+    margin-top: 4px;
+	}
+
+	.backtolistdiv{
+		margin-top: 1.6rem;
+		margin-bottom: 4px;
+	}
+
+	.paddingtop_3{
+		padding-top: 0px;
+	}
+
+	.mobilemargintop{
+		margin-top: 1rem;
+	}
 }

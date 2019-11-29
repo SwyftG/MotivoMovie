@@ -102,7 +102,7 @@ class App extends Component {
       movieDetail = <div></div>
     } else {
       movieDetail = <div className={this.state.showMovieDetail ? "modal display-block" : "modal display-none"} onClick={this.startHideMovieSidePage}>
-        <MovieSidePage showDetail={this.state.showMovieDetail} movie={this.state.movieDetail} isClose={this.state.isClose} hidePage={this.hideMovieSidePage} />
+        <MovieSidePage showDetail={this.state.showMovieDetail} movie={this.state.movieDetail} isClose={this.state.isClose} hidePage={this.hideMovieSidePage} startHideDetailPage={this.startHideMovieSidePage}/>
         </div>
     }
     return (

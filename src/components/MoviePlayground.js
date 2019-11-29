@@ -277,7 +277,7 @@ class MoviePlayground extends Component {
     render() {
         return (
             <div>
-                <div className="row margintop20 padding0_10">
+                <div className="row margintop20 padding0_10 mobilemargintop">
                     <div class={this.state.pageType === "category" ? "input-group " : "display-none"}>
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroup-sizing-default">Filter Movie</span>
