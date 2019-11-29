@@ -292,6 +292,28 @@
 	justify-content: center
 }
 
+.loading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 90px;
+	height: 100%;
+  }
+
+  .blockloading{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    height: 100%;
+    margin: 10px 0px;
+  }
+
+  .castdiv{
+	  width: 185px;
+  }
+
+
 @media screen and (max-width: 767px) {
 	.detailimage {
 		/* width: 20%;
@@ -483,4 +505,13 @@
 	.mobilemargintop{
 		margin-top: 1rem;
 	}
+
+	.blockloading{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2rem;
+		height: 100%;
+		margin: 10px 0px;
+	  }
 }
