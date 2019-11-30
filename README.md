@@ -6,7 +6,7 @@ Using *React, Html5 and CSS3* to build the frontend and using *TMDb's* public AP
 
 You could check it out by the follow link: https://swyftg.github.io/MotivoMovie/
 
-![homepage](https://raw.githubusercontent.com/SwyftG/motivomovie2/master/img/homepage.png)
+![homepage](https://raw.githubusercontent.com/SwyftG/NewStanderJapanses/master/image/react/homepage.png)
 
 
 ### Key Feature
@@ -20,6 +20,7 @@ You could check it out by the follow link: https://swyftg.github.io/MotivoMovie/
 - Implement infinite scrolling, grab the data from API page by page.
 - Automatically set movie detail page's background color by its poster.
 - Simple animations between page changing and hover.
+- Available be visited through web browser and mobile side.
 - Deployed the web on GitHub Page. Open access to anybody to visit.
 
 ### Feature Details
@@ -29,6 +30,37 @@ You could check it out by the follow link: https://swyftg.github.io/MotivoMovie/
 The MotivoMovie is a single-page application. Because all the interactions are happened in a single URL, here is `https://swyftg.github.io/MotivoMovie/`.
 
 Page shows the different content by passing different parameters to `<MoviePlayground>` in `App.js`.
+
+
+#### Page Structure
+
+The whole application is build by React. There are several parts in here:
+- `NaviBar`: Top navigation parts.
+- `MoviePlayground`: The container of movie boxes.
+- `MovieSidePage`: Movie detail slide page.
+- `MovieBox`: Moive poster.
+
+The level picture is like blowing:
+
+![level structure](https://raw.githubusercontent.com/SwyftG/NewStanderJapanses/master/image/react/level.png)
+
+#### Web browser and Mobile Side
+
+This application can be visited by both web browser and mobile. It presents different styles on different devices.
+
+The web browser style:
+
+![web browser01](https://raw.githubusercontent.com/SwyftG/NewStanderJapanses/master/image/react/homepage.png)
+
+![web browser02](https://raw.githubusercontent.com/SwyftG/NewStanderJapanses/master/image/react/color01.png)
+
+
+The mobile style:
+
+![mobile01](https://raw.githubusercontent.com/SwyftG/NewStanderJapanses/master/image/react/mobile01.png)
+
+![mobile02](https://raw.githubusercontent.com/SwyftG/NewStanderJapanses/master/image/react/mobile02.png)
+
 
 #### TMDb's Movie List
 
@@ -62,7 +94,7 @@ Next time when you visit `Watch List` page, the page will read localStorage to g
 
 Here in this page, when you click the post again, it will remove the movie from watch list.
 
-![watch_list](https://raw.githubusercontent.com/SwyftG/motivomovie2/master/img/watchlist.png)
+![watch_list](https://raw.githubusercontent.com/SwyftG/NewStanderJapanses/master/image/react/watchlist.png)
 
 #### Filter Movie And See More
 
@@ -70,15 +102,15 @@ In the top of movie category page, there is a `<input>` component to support fil
 
 This is just using react to manage the movie data which should be shown on the page.
 
-![filter_01](https://raw.githubusercontent.com/SwyftG/motivomovie2/master/img/filter01.png)
+![filter_01](https://raw.githubusercontent.com/SwyftG/NewStanderJapanses/master/image/react/filter01.png)
 
-![filter_02](https://raw.githubusercontent.com/SwyftG/motivomovie2/master/img/filter02.png)
+![filter_02](https://raw.githubusercontent.com/SwyftG/NewStanderJapanses/master/image/react/filter02.png)
 
 See more part is same as below.
 
-![see_more_01](https://raw.githubusercontent.com/SwyftG/motivomovie2/master/img/seemore.png)
+![see_more_01](https://raw.githubusercontent.com/SwyftG/NewStanderJapanses/master/image/react/seemore.png)
 
-![see_more_02](https://raw.githubusercontent.com/SwyftG/motivomovie2/master/img/seemore02.png)
+![see_more_02](https://raw.githubusercontent.com/SwyftG/NewStanderJapanses/master/image/react/seemore02.png)
 
 #### Infinite Scrolling
 
@@ -88,9 +120,9 @@ Using `react-infinite-scroll-component` to implement infinite scrolling page. Wh
 
 Using `react-color-extractor` to make movie detail page's background color more colorful. The color is from movie poster. Different movie will present different movie detail page color.
 
-![color_01](https://raw.githubusercontent.com/SwyftG/motivomovie2/master/img/color01.png)
+![color_01](https://raw.githubusercontent.com/SwyftG/NewStanderJapanses/master/image/react/color01.png)
 
-![color_02](https://raw.githubusercontent.com/SwyftG/motivomovie2/master/img/color02.png)
+![color_02](https://raw.githubusercontent.com/SwyftG/NewStanderJapanses/master/image/react/color02.png)
 
 #### Slide Animation
 
